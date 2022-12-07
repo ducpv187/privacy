@@ -1,0 +1,70 @@
+@import 'reset';
+@import 'mixin';
+@import 'setting';
+@import 'common';
+
+.wrapper {
+    padding: 3rem 0;
+    @include mq_min_969 {
+        padding: 6rem 8rem;
+    }
+    .banner {
+        width: 100%;
+        text-align: center;
+        font-size: 3.2rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        margin-top: 5rem;
+        padding: 5rem 2rem;
+        background: #1976d2;
+        color: white;
+        @include mq_min_969 {
+            font-size: 3.7rem;
+            padding: 7.5rem 2rem;
+        }
+    }
+    .txt-banner {
+        font-size: 6.4rem;
+        letter-spacing: .3rem;
+        @include mq_min_969 {
+            font-size: 3.7rem;
+        }
+    }
+    .content {
+        padding: 3rem 0;
+        .title-text {
+            font-size: 6rem;
+            line-height: 1.3;
+            font-weight: bold;
+            padding: 1rem 0 2rem 0;
+            @include mq_min_969 {
+                font-size: 3.7rem;
+            }
+        }
+        .desc {
+            font-size: 3.2rem;
+            line-height: 1.5;
+            margin: 0 0 1.625rem;
+            @include mq_min_969 {
+                font-size: 1.9rem;
+            }
+        }
+        .list {
+            padding-left: 5rem;
+            @include mq_min_969 {
+                padding-left: 4rem;
+            }   
+        }
+        .infoAddress {
+            a {
+                color: #000000;
+                font-weight: bold;
+            }
+        }
+    }
+    .line-break {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        border: 1px dashed #ccc;
+    }
+}
